@@ -1,2 +1,2 @@
 pillow
-git+https://github.com/psd-tools/psd-tools.git
+psd-tools
