@@ -1,6 +1,2 @@
 pillow
-numpy
-cython
-six
-git+https://github.com/HarvestDigitalE/pytoshop.git
-
+git+https://github.com/psd-tools/psd-tools.git
