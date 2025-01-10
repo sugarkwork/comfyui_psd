@@ -2,6 +2,21 @@
 
 このコードは、ComfyUI に PSD ファイルを出力する機能を追加します。
 
+まだテスト版であり、正常に動作しない可能性や、環境を壊す可能性があります。
+
+# install 
+
+    cd ComfyUI\custom_nodes
+    git clone https://github.com/sugarkwork/comfyui_psd.git
+    cd comfyui_psd
+    .\install.bat
+
+install.bat を叩く必要があります。
+
+上手く動かないかもしれません……。
+
+# how to use
+
 使い方は、
 
 1. まず PSDLayer ノードを作成し、image に画像を接続します。
@@ -11,18 +26,6 @@
 5. レイヤーを追加した順に、下から積み重なります。つまり最初の PSDLayer が一番背景になります。
 6. 最後に Save PSD ノードに PSD を接続すると、最終的な PSD ファイルが保存されます。
 
-This code adds functionality to export PSD files in ComfyUI.
-
-How to use:
-
-1. First, create a PSDLayer node and connect an image to it.
-2. Specify the layer name and blend mode.
-3. Create a new PSDLayer node.
-4. Connect the PSD output from the previously created PSDLayer node to the input of the new PSDLayer, and specify the image, name, and mode in the same way.
-5. Layers are stacked from bottom to top in the order they are added. This means the first PSDLayer becomes the background.
-6. Finally, connect the PSD to the Save PSD node to save the final PSD file.
-
-Note: This is an alpha/beta version, and some parts may not function properly yet.
 
 # sample node
 
